@@ -1,0 +1,35 @@
+/*
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+*/
+
+
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int sum=0;
+        int s=nums.size();
+        int i,j;
+        for(i=0;i<s;i++)
+        {
+            for(j=0;j<s;j++)
+            {
+               if(i==j)
+               continue;
+               if(i!=j)
+               {
+                   sum=nums[i]+nums[j];
+               }
+               if(sum==target)
+               return {i,j};
+               else
+               sum=0;
+            }
+        }
+        return {i,j};
+    }
+};
