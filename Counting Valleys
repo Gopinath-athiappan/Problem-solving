@@ -5,6 +5,7 @@ A valley is a sequence of consecutive steps below sea level, starting with a ste
 
 Given the sequence of up and down steps during a hike, find and print the number of valleys walked through.
 
+
 Function Description
 
 Complete the countingValleys function in the editor below.
